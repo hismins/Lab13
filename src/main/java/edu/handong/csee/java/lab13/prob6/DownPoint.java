@@ -1,13 +1,13 @@
 package edu.handong.csee.java.lab13.prob6;
 
-public class DownPoint {
+public class DownPoint {//a class
 
-	private int x, y;
-	DownPoint(int x, int y){
-		this.x = x; this.y=y;
+	private int x, y;//declaration
+	DownPoint(int x, int y){//implementation.
+		this.x = x; this.y=y;//puts value.
 	}
-	public String toString()
+	public String toString()//toString() method.
 	{
-		return "X : " + x + " Y : " + y;
+		return "X : " + x + " Y : " + y;//return
 	}
 }

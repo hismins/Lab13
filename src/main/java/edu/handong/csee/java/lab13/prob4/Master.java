@@ -2,31 +2,31 @@ package edu.handong.csee.java.lab13.prob4;
 
 import java.util.Scanner;
 
-public class Master {
+public class Master {//main class.
 
-	public void feed(Pet pet)
+	public void feed(Pet pet)// a method.
 	{
-		System.out.println("feed:  " + pet.food());
+		System.out.println("feed:  " + pet.food());//print this line.
 	}
 
-	public static void main(String[] args) {
-		String cat_name, dog_name;
+	public static void main(String[] args) {//main method.
+		String cat_name, dog_name;//declaration.
 
-		Master master = new Master();
-		Cat cat = new Cat();
-		Dog dog = new Dog();
+		Master master = new Master();//instantiation.
+		Cat cat = new Cat();//instantiation.
+		Dog dog = new Dog();//instantiation.
 
-		Scanner keyboard = new Scanner(System.in);
-		System.out.print("Enter the cat name and dog name:  ");
-		cat_name = keyboard.next();
-		dog_name = keyboard.next();
+		Scanner keyboard = new Scanner(System.in);//you can type with your keyboard.
+		System.out.print("Enter the cat name and dog name:  ");//print this line.
+		cat_name = keyboard.next();//gets string from key board and puts to "cat_name".
+		dog_name = keyboard.next();//gets string from key board and puts to "dog_name".
 
-		cat.setName(cat_name);
-		cat.getName();
-		master.feed(cat);
+		cat.setName(cat_name);//runs method.
+		cat.getName();//runs method.
+		master.feed(cat);//runs method.
 
-		dog.setName(dog_name);
-		dog.getName();
-		master.feed(dog);
+		dog.setName(dog_name);//runs method.
+		dog.getName();//runs method.
+		master.feed(dog);//runs method.
 	}
 }
